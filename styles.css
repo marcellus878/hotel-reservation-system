@@ -24,6 +24,7 @@ header {
   text-align: center;
 }
 
+
 header nav a {
   color: #fff;
   margin: 0 1rem;
@@ -39,12 +40,13 @@ header nav a {
 }
 
 .hero h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 0.5rem;
   color: #fff; /* White text for contrast */
 }
 
 .hero p {
+  font-size: 1.1rem;
   color: #ccc; /* Light grey text color for readability */
 }
 
@@ -61,7 +63,7 @@ header nav a {
 .button {
   display: inline-block;
   padding: 0.7rem 1.5rem;
-  background-color: #7d5e5e; /* Visible color */
+  background-color: #f5b8b8; /* Visible color */
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
@@ -70,11 +72,11 @@ header nav a {
 }
 
 .button:hover {
-  background-color: #7d5e5e; /* Darker blue on hover */
+  background-color: #f5b8b8; /* Darker blue on hover */
 }
 
 section .button {
-  background-color: #7d5e5e; /* Visible color */
+  background-color: #f5b8b8; /* Visible color */
   color: #fff;
 }
 
@@ -114,7 +116,7 @@ section .button {
 
 .booking-form label {
   margin-top: 1rem;
-  color: #fff; /* Change to white for better visibility */
+  color: rgb(255, 234, 194); /* Change to white for better visibility */
   font-weight: bold; /* Optional: makes the labels stand out more */
 }
 
@@ -136,4 +138,81 @@ footer {
 .welcome-section {
   color: #ccc; /* Light grey for readability */
   text-align: center;
+}
+
+
+/* Slideshow container */
+.slideshow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  max-width: 800px; /* Set max width for slideshow container */
+  margin: 0 auto; /* Center the slideshow container */
+}
+
+.slide {
+  display: none;
+  text-align: center;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide-image {
+  width: 100%; /* Make the image responsive to container width */
+  height: auto; /* Keep aspect ratio */
+  max-height: 500px; /* Set a max height for the image */
+  object-fit: cover; /* Crop the image if it doesn’t fit the container */
+  display: block;
+}
+
+.caption {
+  position: absolute;
+  bottom: 20px; /* Adjust the position from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  text-align: center;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.gallery-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gallery-title {
+  font-size: 24px; /* Adjust font size as needed */
+  font-weight: bold;
+  color: white; /* Change color as needed */
+  margin-bottom: 10px; /* Space between title and slideshow */
 }

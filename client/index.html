@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Le Comfort</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <header>
     <h1>Le Comfort</h1>
@@ -28,26 +30,26 @@
     <h2 class="gallery-title">OUR GALLERY</h2>
     <div class="slideshow">
       <div class="slide active">
-          <img src="images/slide2.jpg" alt="Chill" class="slide-image">
-          <div class="caption">A relaxing spot with a pleasant view</div>
+        <img src="images/slide2.jpg" alt="Chill" class="slide-image">
+        <div class="caption">A relaxing spot with a pleasant view</div>
       </div>
       <div class="slide">
-          <img src="images/slide1.jpg" alt="Chill" class="slide-image">
-          <div class="caption">A dream pool to rest by</div>
+        <img src="images/slide1.jpg" alt="Chill" class="slide-image">
+        <div class="caption">A dream pool to rest by</div>
       </div>
       <div class="slide">
-          <img src="images/slide3.jpg" alt="the sight" class="slide-image">
-          <div class="caption">A bliss</div>
+        <img src="images/slide3.jpg" alt="the sight" class="slide-image">
+        <div class="caption">A bliss</div>
       </div>
       <!-- Navigation buttons -->
       <button class="prev">&#10094;</button>
       <button class="next">&#10095;</button>
-  </div>
-</section>
+    </div>
+  </section>
 
   <section id="rooms" class="rooms">
     <h2>OUR ROOMS</h2>
-    
+
     <div class="room">
       <img src="images/suite.jpg" alt="Suite Room" class="room-image">
       <h4>Suite</h4>
@@ -55,7 +57,7 @@
       <p>Layout: Twin beds</p>
       <p>₹32,000/night</p>
     </div>
-    
+
     <div class="room">
       <img src="images/sea facing.jpg" alt="Sea Facing Room" class="room-image">
       <h4>Sea Facing</h4>
@@ -63,15 +65,15 @@
       <p>Layout: Queen size bed</p>
       <p>₹15,000/night</p>
     </div>
-    
+
     <div class="room">
-        <img src="images/chalet.jpg" alt="Chalet Room" class="room-image">
+      <img src="images/chalet.jpg" alt="Chalet Room" class="room-image">
       <h4>Chalet</h4>
       <p>Cozy chalet for a serene experience.</p>
       <p>Layout: Twin beds</p>
       <p>₹10,000/night</p>
     </div>
-    
+
     <div class="room">
       <img src="images/presidential suite.jpg" alt="Presidential Room" class="room-image">
       <h4>Presidential</h4>
@@ -79,7 +81,7 @@
       <p>Layout: Twin beds</p>
       <p>₹55,000/night</p>
     </div>
-    
+
     <div class="room">
       <img src="images/deluxe rooms.jpg" alt="Deluxe Room" class="room-image">
       <h4>Deluxe</h4>
@@ -88,44 +90,46 @@
       <p>₹23,000/night</p>
     </div>
   </section>
-  
+
 
   <section id="book" class="booking-form">
     <h3>Book Your Stay</h3>
     <form id="booking-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
 
-        <label for="checkin">Check-In Date:</label>
-        <input type="date" id="checkin" name="checkin" required>
+      <label for="checkin">Check-In Date:</label>
+      <input type="date" id="checkin" name="checkin" required>
 
-        <label for="checkout">Check-Out Date:</label>
-        <input type="date" id="checkout" name="checkout" required>
+      <label for="checkout">Check-Out Date:</label>
+      <input type="date" id="checkout" name="checkout" required>
 
-        <label for="room">Room Type:</label>
-        <select id="room" name="room">
-            <option value="suite">Suite</option>
-            <option value="sea-facing">Sea Facing</option>
-            <option value="chalet">Chalet</option>
-            <option value="presidential">Presidential</option>
-            <option value="deluxe">Deluxe</option>
-        </select>
+      <label for="room">Room Type:</label>
+      <select id="room_type" name="room_type">
+        <option value="">Loading rooms...</option>
+        <option value="suite">Suite</option>
+        <option value="sea-facing">Sea Facing</option>
+        <option value="chalet">Chalet</option>
+        <option value="presidential">Presidential</option>
+        <option value="deluxe">Deluxe</option>
+      </select>
 
-        <!-- Display price for the selected room -->
-        <p>Price: <span id="price">₹15000</span>/night</p>
+      <!-- Display price for the selected room -->
+      <p id="price"> </p>
 
-        <button type="submit" class="button">Reserve Now</button>
+      <button type="submit" class="button">Reserve Now</button>
     </form>
-</section>
+  </section>
 
 
   <footer>
     <p>&copy; 2024 Le Comfort. All rights reserved.</p>
   </footer>
   <!-- Link to JavaScript file -->
-  <script src="script.js"></script>
+  <script defer type="text/javascript" src="script.js"></script>
 </body>
+
 </html>

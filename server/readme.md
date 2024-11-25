@@ -72,6 +72,11 @@ Now that the virtual environment is activated, install the required dependencies
   ```bash
   pip install -r requirements.txt
   ```
+- If the following packages aint working cause of version error, remove the specified version constraints. 
+torch==2.5.1 ------> torch
+torchaudio==2.5.1 ------> torchaudio
+torchvision==0.20.1 ------> torchvision
+
 
 ## Step 4: Run the Flask Application
 
